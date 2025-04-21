@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Webpage Challenges</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Dynamic Webpage Challenges</h1>
+  </header>
+
+  <!-- Problem 1: Dynamic Content Update -->
+  <section class="challenge" id="challenge1">
+    <h2>Dynamic Content Update</h2>
+    <h3 id="dynamicHeading">Hello, World!</h3>
+    <button id="changeHeadingBtn">Change Heading Text</button>
+  </section>
+
+  <!-- Problem 2: Real-Time Character Counter -->
+  <section class="challenge" id="challenge2">
+    <h2>Real-Time Character Counter</h2>
+    <input type="text" id="charInput" placeholder="Type your message here...">
+    <p>Character Count: <span id="charCount">0</span></p>
+  </section>
+
+  <!-- Problem 3: Add and Remove List Items -->
+  <section class="challenge" id="challenge3">
+    <h2>Add and Remove List Items</h2>
+    <input type="text" id="listInput" placeholder="Enter a new item">
+    <button id="addItemBtn">Add</button>
+    <ul id="dynamicList"></ul>
+  </section>
+
+  <!-- Problem 4: Change Background Colour -->
+  <section class="challenge" id="challenge4">
+    <h2>Change Background Colour</h2>
+    <button class="colorBtn" data-color="red">Red</button>
+    <button class="colorBtn" data-color="blue">Blue</button>
+    <button class="colorBtn" data-color="green">Green</button>
+  </section>
+
+  <!-- Problem 5: Toggle Dark Mode -->
+  <section class="challenge" id="challenge5">
+    <h2>Toggle Dark Mode</h2>
+    <button id="toggleDarkMode">Toggle Dark Mode</button>
+  </section>
+
+  <!-- Problem 6: Simple Quiz Application -->
+  <section class="challenge" id="challenge6">
+    <h2>Simple Quiz Application</h2>
+    <p id="quizQuestion">What is the capital of France?</p>
+    <div class="quiz-options">
+      <button class="quizBtn" data-answer="wrong">Berlin</button>
+      <button class="quizBtn" data-answer="correct">Paris</button>
+      <button class="quizBtn" data-answer="wrong">Madrid</button>
+    </div>
+    <p id="quizFeedback"></p>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>

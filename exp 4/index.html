@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multi-Function Application</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Stopwatch Section -->
+  <div class="section" id="stopwatch-section">
+    <h2>Stopwatch</h2>
+    <div id="stopwatch-display">00:00</div>
+    <div class="btn-group">
+      <button id="sw-start">Start</button>
+      <button id="sw-stop">Stop</button>
+      <button id="sw-reset">Reset</button>
+    </div>
+  </div>
+
+  <!-- Image Carousel Section -->
+  <div class="section" id="carousel-section">
+    <h2>Image Carousel</h2>
+    <div class="carousel-container">
+      <button id="carousel-prev" class="carousel-btn">&#10094;</button>
+      <img id="carousel-image" src="https://via.placeholder.com/300?text=Image+1" alt="Carousel Image">
+      <button id="carousel-next" class="carousel-btn">&#10095;</button>
+    </div>
+    <div id="carousel-dots" class="dots"></div>
+  </div>
+
+  <!-- Registration Form Section -->
+  <div class="section" id="form-section">
+    <h2>Registration Form</h2>
+    <form id="registration-form" novalidate>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <span class="error" id="name-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <span class="error" id="email-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <span class="error" id="password-error"></span>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" required>
+        <span class="error" id="confirm-password-error"></span>
+      </div>
+      <button type="submit">Submit</button>
+      <div id="form-message"></div>
+    </form>
+  </div>
+
+  <!-- To-Do List Section -->
+  <div class="section" id="todo-section">
+    <h2>To-Do List</h2>
+    <div class="todo-input-group">
+      <input type="text" id="todo-input" placeholder="Add a new task">
+      <button id="add-task-btn">Add Task</button>
+    </div>
+    <ul id="todo-list"></ul>
+    <button id="clear-all-btn">Clear All</button>
+  </div>
+
+  <!-- Drag and Drop File Uploader Section -->
+  <div class="section" id="uploader-section">
+    <h2>Drag and Drop File Uploader</h2>
+    <div id="file-uploader">
+      <p>Drag & Drop file here or click to select</p>
+      <input type="file" id="file-input" hidden>
+    </div>
+    <div id="file-error" class="error"></div>
+    <div id="file-preview"></div>
+    <button id="remove-file-btn" style="display: none;">Remove File</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

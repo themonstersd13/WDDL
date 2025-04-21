@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh Doiphode</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Saurabh Doiphode</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+    
+    <div>
+        <!-- profile picture -->
+        <div class="folio">
+            <div class="image"></div>
+        </div>
+        <div class="textContent">
+            <div><h1>Saurabh Doiphode</h1></div>
+        </div>
+        <div class="textContent about">
+            <a href="https://www.linkedin.com/in/saurabh-doiphode/"><img class="logo" src='./linkedin.png'></a>
+            <a href="https://github.com/themonstersd13"><img class="logo" src="./github.png"></a>
+        </div>
+        
+        <!-- about me -->
+        <div class="textContent" id="about">
+            <div class="aboutme">
+                <div class="textContent">
+                    <h3 class='section-title'>About Me</h3>
+                </div>
+                <div>
+                    <p class="abtme">I am Saurabh Doiphode, currently pursuing a B.Tech in Computer Science and Engineering at Walchand College of Engineering, Sangli. ...</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="projects"><h2 class="section-title">Projects</h2></div>
+        
+        <!-- projects -->
+        <div class="cards">
+            <div class="flex">
+                <div class="flip-container">
+                    <div class="flip-card" onclick="flipCard(this)">
+                        <div class="front">
+                            <div class="crop-care-container">
+                                <div class="crop-care-card">
+                                    <h1 style="color: #38bdf8;">📒 NotesAdda</h1>
+                                    <p>Welcome to <strong>NotesAdda</strong>! 🌐📂...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back"> <iframe src="https://notesadda.vercel.app" width="100%" height="600px" style="border: none;"></iframe></div>
+                    </div>
+                </div>
+                
+                <div class="flip-container">
+                    <div class="flip-card" onclick="flipCard(this)">
+                        <div class="front">
+                            <div class="crop-care-container">
+                                <div class="crop-care-card">
+                                    <h1>🌾 Crop Care</h1>
+                                    <p>Welcome to <strong>Crop Care</strong>! 🌿🚜...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back"> <img style="height:40rem; width: 55rem;" src="./ccare.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- contact me -->
+        <div id="contact">
+            <section class="contact section bd-container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact__container bd-grid">
+                    <div class="contact__content bd-grid">
+                        <div class="contact__box">
+                            <i class="bx bx-phone contact__icon"></i>
+                            <h3 class="contact__title">Phone</h3>
+                            <span class="contact__description">7276495980</span>
+                        </div>
+                        <div class="contact__box ddd">
+                            <i class="bx bx-envelope contact__icon"></i>
+                            <h3 class="contact__title">Gmail</h3>
+                            <span class="contact__description">saurabh.doiphode@walchand.ac.in</span>
+                        </div>
+                    </div>
+                    <form onsubmit="handleFormSubmit(event)" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input" required>
+                            <input type="email" placeholder="Email" class="contact__input" required>
+                        </div>
+                        <textarea cols="0" rows="7" placeholder="Message" class="contact__input" required></textarea>
+                        <center><input type="submit" value="Send Message" class="button contact__button"></center>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script href="./index.js"></script>
+</body>
+</html>

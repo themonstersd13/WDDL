@@ -1,0 +1,236 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .section {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  /* Stopwatch Styling */
+  #stopwatch-display {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  .btn-group button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background: #007BFF;
+    color: #fff;
+    transition: background 0.3s;
+  }
+  
+  .btn-group button:hover {
+    background: #0056b3;
+  }
+  
+  /* Carousel Styling */
+  .carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-container img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+  }
+  
+  .carousel-btn {
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+  
+  #carousel-prev {
+    left: 10px;
+  }
+  
+  #carousel-next {
+    right: 10px;
+  }
+  
+  .dots {
+    margin-top: 10px;
+  }
+  
+  .dots span {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dots span.active {
+    background-color: #717171;
+  }
+  
+  /* Form Styling */
+  .form-group {
+    margin: 15px 0;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9em;
+  }
+  
+  #form-message {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+  }
+  
+  form button[type="submit"] {
+    padding: 10px 20px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background: #218838;
+  }
+  
+  /* To-Do List Styling */
+  .todo-input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  #todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #add-task-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background: #17a2b8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #add-task-btn:hover {
+    background: #138496;
+  }
+  
+  #todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #todo-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  #todo-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  #todo-list li button {
+    background: transparent;
+    border: none;
+    color: red;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  /* Clear All Button */
+  #clear-all-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #clear-all-btn:hover {
+    background: #c82333;
+  }
+  
+  /* File Uploader Styling */
+  #file-uploader {
+    border: 2px dashed #007BFF;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #file-uploader:hover {
+    background: #e7f3ff;
+  }
+  
+  #file-preview img {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  #remove-file-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
